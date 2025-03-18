@@ -17,11 +17,6 @@ mqtt_client.loop_start()  # Start MQTT loop in the background
 
 userName = "NONE"
 
-@app.route('/')
-def index():
-    return "Welcome to Face Verification Service!"  
-
-
 @app.route('/verify', methods=['POST'])
 def verify():
     global userName
